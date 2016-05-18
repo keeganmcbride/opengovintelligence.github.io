@@ -44,272 +44,50 @@ $color-quaternary: 			#d1d1d1;				// darker grey
 // WORK IN PROGRESS
 // ==========================================================================
 
-body {
-	font-family: 'Avenir', 'Futura', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+.isometric {
+	margin-left: 200px;
+	position: relative;
+	height: 200px;
+	font-size: 40px;
+
+	$angle: 30deg;
+	$scale: 0.86062;
+	$width: 100% * 0.86062;
+	$cubewidth: $width /2;
+	$topheight: 75%;
+	$cubedimension: 1em;
+	$n_cubes: 2;
+
+	.col  {
+		&:nth-child(1) {transform: translate(0,4em);}
+		&:nth-child(2) {transform: translate(0,3em);}
+		&:nth-child(3) {transform: translate(0,2em);}
+		&:nth-child(4) {transform: translate(0,1em);}
+	}
+
+	.row {
+		&:nth-child(1) {transform: translate(0,0);}
+		&:nth-child(2) {transform: translate(0,1em);}
+		&:nth-child(3) {transform: translate(0,2em);}
+		&:nth-child(4) {transform: translate(0,3em);}
+	}
+
+	.cell {
+		position: absolute;
+		top:0;
+		left: 0;
+		height: $cubedimension;
+		width: $cubedimension;
+		&:nth-child(1) {transform: translate(0,0);}
+		&:nth-child(2) {transform: translate(1em,0);}
+		&:nth-child(3) {transform: translate(2em,0);}
+		&:nth-child(4) {transform: translate(3em,0);}
+	}
+
+	.tops {
+		transform: rotate($angle) skewX(-$angle) scale(1, $scale);
+		width: 1em; // will overflow
+	}
 }
 
-		h1, h2, h3, h4, h5, h6 {
-			color: #B3B4A8;
-		}
-
-		a, a:visited, a:hover {
-			color: #E44690;
-		}
-
-		blockquote,
-		footer {
-			background: #F6F6F4;
-		}
-
-		header {
-			margin-top: 24px;
-		}
-
-		header img {
-			margin-bottom: 12px;
-			max-width: 100%;
-		}
-
-		footer {
-			padding: 24px 0;
-		}
-
-		a img {
-			opacity: 0.5;
-			width: 50px;
-		}
-
-		a:hover img {
-			opacity: 1;
-		}
-
-		.logo {
-			font-size: 0.6em;
-			margin-top: 4em;
-			position: relative;
-			height: 15em;
-		}
-
-		.logo div {
-			position: absolute;
-			top:0;
-			left: 0;
-			height: 3em;
-			width: 3em;
-		}
-
-		.a {
-			transform: translate(0px, 49.5%) rotate(30deg) skewX(30deg) scale(1, 0.86062);
-		}
-
-		.b {
-			transform: translate(130%,25%) rotate(30deg) skewX(-30deg) scale(1, 0.86062);
-		}
-
-		.c {
-			transform: translate(259%,0%) rotate(30deg) skewX(30deg) scale(1, 0.86062);
-		}
-
-		.d {
-			transform: translate(171%,100%) rotate(-30deg) skewX(-30deg) scale(1, 0.86062);
-		}
-
-		.e {
-			transform: translate(259%,150%) rotate(-30deg) skewX(-30deg) scale(1, 0.86062);
-		}
-
-		.f {
-			transform: translate(130%,224%) rotate(30deg) skewX(-30deg) scale(1, 0.86062);
-		}
-
-		.pale {
-			background: #B3B4A8;
-		}
-
-		.dark {
-			background: #938779;
-		}
-
-		.pink {
-			background: #E44690;
-		}
-
-		.name {
-			color: #B3B4A8;
-			font-size: 4em;
-			font-weight: 500;
-			transform: translate(0,3.4em);
-		}
-
-		.name span {
-			color: #E44690;
-		}
-
-		@media (min-width: 400px) {
-			.name {
-				transform: translate(3em,0.2em);
-			}
-		}
-
-
-		.wrapper {
-			margin: 0 auto;
-			width: 80%;
-		}
-
-		section,
-		p {
-			margin-bottom: 2rem;
-		}
-
-	.isometric {
-		position: relative;
-		height: 200px;
-		font-size: 40px;
-
-		$angle: 30deg;
-		$scale: 0.86062;
-		$width: 100% * 0.86062;
-		$cubewidth: $width /2;
-		$topheight: 75%;
-		$cubedimension: 1em;
-		$n_cubes: 2;
-
-
-			span {
-				font-size: 20px;
-				display: none;
-			}
-
-			 >div div {
-				position: absolute;
-				top:0;
-				left: 0;
-				height: $cubedimension;
-				width: $cubedimension;
-			}
-
-			.col  {
-				&:nth-child(1) {
-					transform: translate(0,0);
-				}
-
-				&:nth-child(1) {
-					transform: translate(0,1em);
-				}
-
-				&:nth-child(3) {
-					transform: translate(0,2em);
-				}
-
-				&:nth-child(4) {
-					transform: translate(0,3em);
-				}
-			}
-
-			.tops {
-				transform: rotate($angle) skewX(-$angle) scale(1, $scale);
-				width: 1em; // will overflow
-
-
-
-					.row {
-
-						> div {
-
-
-							&:nth-child(1) {
-								transform: translate(0,0);
-							}
-
-							&:nth-child(2) {
-								transform: translate(1em,0);
-							}
-
-							&:nth-child(3) {
-								transform: translate(2em,0);
-							}
-
-							&:nth-child(4) {
-								transform: translate(3em,0);
-							}
-						}
-
-						&:nth-child(1) {
-							transform: translate(0,0);
-						}
-
-						&:nth-child(2) {
-							transform: translate(0,1em);
-						}
-
-						&:nth-child(3) {
-							transform: translate(0,2em);
-						}
-
-						&:nth-child(4) {
-							transform: translate(0,3em);
-						}
-					}
-			}
-
-			.lefts {
-				position: absolute;
-				top: 0;
-				left: 0;
-				transform: translate(-$width, 0.5em) rotate($angle) skewX($angle) scale(1, $scale);
-				width: 1em; // will overflow
-
-				div {
-					background: #9c0;
-
-					&:nth-child(1) {
-						transform: translate(0,0);
-					}
-
-					&:nth-child(2) {
-						transform: translate(1em,0);
-					}
-
-					&:nth-child(3) {
-						transform: translate(2em,0);
-					}
-
-					&:nth-child(4) {
-						transform: translate(3em,0);
-					}
-				}
-			}
-
-
-		.col:nth-child(1) { .tops .row div { background: #f00;}}
-		.col:nth-child(2) { .tops .row div { background: #a00;}}
-		.col:nth-child(3) { .tops .row div { background: #700;}}
-		.col:nth-child(4) { .tops .row div { background: #300;}}
-
-		.cube{
-			.l {
-				//background: #fc0;
-				//transform: translate(-$cubewidth, $topheight) rotate($angle) skewX($angle) scale(1, $scale);
-			}
-
-			.t {
-				//background: #9c0;
-				//transform: translate(0%,0%) rotate($angle) skewX(-$angle) scale(1, $scale);
-			}
-
-			.r {
-				//background: #3c0;
-				//transform: translate($cubewidth, $topheight) rotate(-$angle) skewX(-$angle) scale(1, $scale);
-			}
-
-			.r1_c1 {
-				transform: translate(0,0);
-			}
-
-			.r2_c1 {
-				background: #fc0;
-				transform: translate(500px,100px);
-			}
-		}
-	}
+.col:nth-child(4) .row:nth-child(4) .cell:nth-child(4) {background: #fc0;}
