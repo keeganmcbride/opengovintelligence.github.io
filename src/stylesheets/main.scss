@@ -44,19 +44,19 @@ $color-quaternary: 			#d1d1d1;				// darker grey
 // WORK IN PROGRESS
 // ==========================================================================
 
+$angle: 30deg;
+$scale: 0.86062;
+$width: 100% * 0.86062;
+$cubewidth: $width /2;
+$topheight: 75%;
+$cubedimension: 1em;
+$n_cubes: 2;
+
 .isometric {
 	margin-left: 200px;
 	position: relative;
 	height: 200px;
 	font-size: 40px;
-
-	$angle: 30deg;
-	$scale: 0.86062;
-	$width: 100% * 0.86062;
-	$cubewidth: $width /2;
-	$topheight: 75%;
-	$cubedimension: 1em;
-	$n_cubes: 2;
 
 	.col  {
 		&:nth-child(1) {transform: translate(0,4em);}
@@ -83,16 +83,11 @@ $color-quaternary: 			#d1d1d1;				// darker grey
 		&:nth-child(3) {transform: translate(2em,0);}
 		&:nth-child(4) {transform: translate(3em,0);}
 	}
-
-	.tops {
-		transform: rotate($angle) skewX(-$angle) scale(1, $scale);
-		width: 1em;
-	}
 }
 
-.col:nth-child(1) .row:nth-child(1) .cell:nth-child(1) {background: #fc0;}
-.col:nth-child(1) .row:nth-child(1) .cell:nth-child(4) {background: #fc0;}
-.col:nth-child(4) .row:nth-child(1) .cell:nth-child(1) {background: #fc0;}
-.col:nth-child(4) .row:nth-child(4) .cell:nth-child(4) {background: #fc0;}
-.col:nth-child(4) .row:nth-child(4) .cell:nth-child(1) {background: #fc0;}
-.col:nth-child(4) .row:nth-child(1) .cell:nth-child(4) {background: #fc0;}
+.tops .transform {
+	transform: rotate($angle) skewX(-$angle) scale(1, $scale);
+	width: 1em;
+}
+
+.cell {background: #fc0;}
