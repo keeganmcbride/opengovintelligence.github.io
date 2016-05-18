@@ -1,0 +1,16 @@
+// ==========================================================================
+// JAVASCRIPT degrade
+// ==========================================================================
+// .js is added by Modernizr when JavaScript is available
+
+.visible_when_javascript_available {
+	display: none;
+}
+
+.js .visible_when_javascript_available {
+	display: block;
+}
+
+.js .hidden_when_javascript_available {
+	display: none;
+}

@@ -1,0 +1,104 @@
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea,
+select {
+	background-color: $color-initial;
+	border-radius: 0;
+}
+
+input[type='submit'] {
+	width: 100%;
+}
+
+.label,
+label {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+select {
+	display: inline;
+	width: auto;
+}
+
+input[type='checkbox'] ~ label {
+	display: inline-block;
+}
+
+.rating_a {
+	background: $rating_a;
+	margin-right: 130px;
+}
+
+.rating_b {
+	background: $rating_b;
+	margin-right: 110px;
+}
+
+.rating_c {
+	background: $rating_c;
+	margin-right: 90px;
+}
+
+.rating_d {
+	background: $rating_d;
+	margin-right: 70px;
+}
+
+.rating_e {
+	background: $rating_e;
+	margin-right: 50px;
+}
+
+.rating_f {
+	background: $rating_f;
+	margin-right: 30px;
+}
+
+.rating_g {
+	background: $rating_g;
+	margin-right: 10px;
+}
+
+.rating_c,
+.rating_d,
+.rating_e,
+.rating_f,
+.rating_g {
+	color: $color-ink;
+}
+
+.rating {
+	font-weight: bold;
+	line-height: 1em;
+	margin-bottom: 0.1rem;
+	padding: 0.5rem;
+
+	input {
+		margin: 0;
+	}
+
+	label {
+		cursor: pointer;
+		display: block;
+		padding-left: 0.4rem;
+		text-align: right;
+		width: 100%;
+
+		span {
+			display: inline-block;
+			float: left;
+		}
+	}
+
+	strong {
+		color: $color-initial;
+		font-size: 2rem;
+		-webkit-text-stroke: 1px $color-ink;
+	}
+}

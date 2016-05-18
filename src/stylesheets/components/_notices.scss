@@ -1,0 +1,36 @@
+aside {
+	padding: 6px 24px;
+}
+
+.success {
+	background: $color-status-action;
+	color: $color-initial;
+}
+
+.info,
+.warning {
+	background: $color-status-highlight;
+
+	&:before {
+		content: 'NOTICE: ';
+	}
+}
+
+.error {
+	background: $color-status-error;
+	color: $color-initial;
+
+	&:before {
+		content: 'ERROR: ';
+	}
+}
+
+.visible_on_out_of_spec,
+.visible_on_ie9 {
+	display: none;
+}
+
+.out_of_spec .visible_on_out_of_spec,
+.ie9 .visible_on_ie9 {
+	display: block;
+}

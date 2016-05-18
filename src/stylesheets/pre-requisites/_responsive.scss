@@ -1,0 +1,53 @@
+// ==========================================================================
+//   RESPONSIVE BREAKPOINTS
+// ==========================================================================
+//
+//   Usage:
+//
+//   body{
+//     @include for_mobile {
+//       background: #00f;
+//     }
+//     @include not_for_mobile {
+//       background: #0f0;
+//     }
+//   }
+//
+//   NB preferred style is mobile first then override with additional styles
+//   for larger screens, ie
+//
+//   body{
+//     background: #00f;
+//       @include not_for_mobile {
+//         background: #0f0;
+//      }
+//    }
+//
+//
+// ==========================================================================
+
+$swirrlconfig_breakpoint_mobile: 40rem !default;
+
+@mixin for_mobile {
+	@media (max-width: $swirrlconfig_breakpoint_mobile) {
+		@content;
+	}
+}
+
+@mixin not_for_mobile {
+	@media (min-width: $swirrlconfig_breakpoint_mobile) {
+		@content;
+	}
+}
+
+@include for_mobile {
+	.hidden_for_mobile {
+		display: none;
+	}
+}
+
+@include not_for_mobile {
+	.hidden_for_not_mobile {
+		display: none;
+	}
+}

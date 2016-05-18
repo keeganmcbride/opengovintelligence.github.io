@@ -1,0 +1,40 @@
+nav {
+	.facets {
+		width: 100%;
+
+		h3,
+		.tabs > label,
+		.tab_content {
+			padding: 1em;
+		}
+
+		.tabs {
+			display: flex;
+			flex-wrap: wrap;
+
+			> label {
+				cursor: pointer;
+				flex: 1;
+				font-size: 12px;
+			}
+
+			.tab_content {
+				display: none;
+				order: 1;
+				width: 100%;
+			}
+
+			> input[type=radio] {
+				display: none;
+
+				&:checked + label {
+					background: transparent;
+
+					+ .tab_content {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

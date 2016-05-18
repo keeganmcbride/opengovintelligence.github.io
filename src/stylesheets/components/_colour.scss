@@ -1,0 +1,12 @@
+footer {
+	background: $color-tertiary;
+}
+
+nav {
+	background: $color-quaternary;
+
+	h3,
+	.tabs > label {
+		background: $color-tertiary;
+	}
+}

@@ -1,0 +1,42 @@
+.logo,
+.logo * {
+	box-sizing: content-box;
+}
+
+.logo {
+	margin-bottom: 1em;
+}
+
+.logo h1 {
+	display: block;
+	font-size: 32px;
+	font-weight: bold;
+	height: 65px;
+	line-height: 35px;
+	margin: 0;
+	padding: 0;
+}
+
+.dclg {
+	// scss-lint:disable UrlFormat
+	background-image: url('https://assets.digital.cabinet-office.gov.uk/government/assets/crests/org_crest_13px-6dbf12722b555089c0b9500f76e91e4fd8b6874f65c71c49d5eb8af32c52cfe1.png');
+	// scss-lint:disable UrlFormat
+	background-position: 5px 0%;
+	background-repeat: no-repeat;
+	background-size: auto 20px;
+	border-left: 2px solid rgb(0, 133, 126);
+	color: rgb(11, 12, 12);
+	display: block;
+	font-family: Helvetica, Arial;
+	font-size: 13px;
+	font-weight: normal;
+	height: 45px;
+	letter-spacing: 0;
+	line-height: 15px;
+	margin: 0;
+	padding: 20px 0 0 6px;
+	position: relative;
+	text-decoration: none;
+	text-transform: none;
+	width: 451px;
+}
