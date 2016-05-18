@@ -86,8 +86,13 @@ $color-quaternary: 			#d1d1d1;				// darker grey
 
 	.tops {
 		transform: rotate($angle) skewX(-$angle) scale(1, $scale);
-		width: 1em; // will overflow
+		width: 1em;
 	}
 }
 
+.col:nth-child(1) .row:nth-child(1) .cell:nth-child(1) {background: #fc0;}
+.col:nth-child(1) .row:nth-child(1) .cell:nth-child(4) {background: #fc0;}
+.col:nth-child(4) .row:nth-child(1) .cell:nth-child(1) {background: #fc0;}
 .col:nth-child(4) .row:nth-child(4) .cell:nth-child(4) {background: #fc0;}
+.col:nth-child(4) .row:nth-child(4) .cell:nth-child(1) {background: #fc0;}
+.col:nth-child(4) .row:nth-child(1) .cell:nth-child(4) {background: #fc0;}
