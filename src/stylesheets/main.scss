@@ -1,10 +1,29 @@
-$color-ink: #000;
+// GLOBAL CONFIGURATION
+// colours etc
+// ==========================================================================
 
-$root-font-family: "Avenir", "Avenir Next", "Futura", "Helvetica", "Arial", sans-serif;
-$monospace-font-family: "Monaco", monospace;
-$root-color: $color-ink;
+$colour_paper: #fff;
+$colour_ink: #000;
+$colour_bright: #e44690;
 
-@import '../../node_modules/sanitize.css/sanitize';
+// SANITIZE
+// configurable reset
+// ==========================================================================
+
+$root-color: $colour_ink;
+$root-font-size: 100%;
+$root-font-family: 'Avenir', 'Avenir Next', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$monospace-font-family: 'Monaco', monospace;
+
+@import '../../node_modules/sanitize.css/lib/sanitize.sass';
+
+:root {
+	font-size: $root-font-size; // FIXME shouldn't be needed :(
+}
+
+// MR RESETTI
+// re-re-set when the crowd say 'Bo, consistent and responsive.'
+// ==========================================================================
 
 *,
 *:before,
@@ -14,8 +33,34 @@ $root-color: $color-ink;
 	padding: 0;
 }
 
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+	max-width: 100%;
+}
+
+// BASSCSS
+// is a bit of a buzzkill, but let's have it available for extension
+// ==========================================================================
+
 @import '../../node_modules/basscss/css/basscss';
 
-.grid {
-	//
-}
+// OPENGOVINTELLIGENCE
+// house styles
+// ==========================================================================
+
+@import 'features/layout';
+@import 'features/links';
+@import 'features/typography';
+
+// WORK IN PROGGRESS
+// rough work here - but break out into a feature module asap
+// ==========================================================================

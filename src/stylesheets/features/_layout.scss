@@ -1,0 +1,29 @@
+// LAYOUT
+// ==========================================================================
+
+.wrap {
+	@extend .px3;
+}
+
+section {
+	@extend .py4;
+
+	h2 {
+		@extend .h1;
+		@extend .mb2;
+	}
+}
+
+.grid {
+	@extend .mxn2;
+	@extend .flex;
+	@extend .flex-wrap;
+}
+
+.grid_cell {
+	@extend .px2;
+	@extend .col-12;
+	@extend .mb2;
+	@extend .sm-col-6;
+	@extend .md-col-4;
+}
