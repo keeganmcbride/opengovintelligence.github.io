@@ -1,12 +1,12 @@
 // LAYOUT
 // ==========================================================================
 
-.wrap {
+.pagewidth {
 	@extend .px3;
 }
 
 section {
-	@extend .py4;
+	@extend .py2;
 
 	h2 {
 		@extend .h1;

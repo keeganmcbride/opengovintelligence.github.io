@@ -4,7 +4,10 @@
 
 $colour_paper: #fff;
 $colour_ink: #000;
+
 $colour_bright: #e44690;
+
+$colour_tone_1: #ccc;
 
 // SANITIZE
 // configurable reset
@@ -64,3 +67,11 @@ textarea {
 // WORK IN PROGGRESS
 // rough work here - but break out into a feature module asap
 // ==========================================================================
+
+header {
+	background: $colour_bright;
+}
+
+footer {
+	background: $colour_tone_1;
+}
