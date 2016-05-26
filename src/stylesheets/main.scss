@@ -75,38 +75,51 @@ body {
 	width: 100%;
 }
 
-$nav_dimension: 500px;
+$nav_dimension: 400px;
 
 main {
 	@extend .precede_sticky_footer;
 	margin-top: $nav_dimension;
 }
 
-nav {
-	background: $colour_bright;
-	display: flex;
+.shadow,
+.pink {
 	height: $nav_dimension;
-	padding: 30px;
 	position: absolute;
 	right: 0;
 	top: 0;
-	transform: translate(250px) rotate(30deg);
+	transform-origin: 0 100%;
 	width: $nav_dimension;
+}
+
+.shadow {
+	background: $colour_tone_1;
+	transform: translate(300px, -100px) skewX(30deg) rotate(-30deg) scale(1, 0.6);
+}
+
+.pink {
+	background: $colour_bright;
+	display: flex;
+	padding: 30px;
+	transform: translate(300px, -100px) rotate(-30deg);
 
 	a,
 	a:hover {
 		color: $colour_paper;
-		font-weight: bold;
+		font-weight: 500;
 		text-decoration: none;
 	}
 
 	a:hover {
-		padding-left: 20px;
+		font-weight: bold;
+		padding-left: 10px;
 	}
 }
 
 ol {
-	align-self: flex-end;
+	//align-self: flex-end;
+	align-self: center;
+
 }
 
 footer {
