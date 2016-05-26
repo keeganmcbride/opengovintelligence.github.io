@@ -63,14 +63,50 @@ textarea {
 @import 'features/layout';
 @import 'features/links';
 @import 'features/sticky';
-@import 'features/typography';
 
 // WORK IN PROGGRESS
 // rough work here - but break out into a feature module asap
 // ==========================================================================
 
-header {
+body {
+	@extend .with_sticky_footer;
+	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+}
+
+$nav_dimension: 500px;
+
+main {
+	@extend .precede_sticky_footer;
+	margin-top: $nav_dimension;
+}
+
+nav {
 	background: $colour_bright;
+	display: flex;
+	height: $nav_dimension;
+	padding: 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translate(250px) rotate(30deg);
+	width: $nav_dimension;
+
+	a,
+	a:hover {
+		color: $colour_paper;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	a:hover {
+		padding-left: 20px;
+	}
+}
+
+ol {
+	align-self: flex-end;
 }
 
 footer {
