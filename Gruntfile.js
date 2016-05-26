@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 
-		clean: ['resources/public/css','test/html'],
+		clean: ['stylesheets'],
 
 		parker: {
 			options: {},
