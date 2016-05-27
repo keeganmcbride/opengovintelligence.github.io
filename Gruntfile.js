@@ -55,6 +55,7 @@ module.exports = function(grunt) {
 			options: {
 				map: false,
 				processors: [
+					require('css-mqpacker')(),
 					require('pixrem')(), // add fallbacks for rem units
 					require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
 					// require('cssnano')() // minify the result
