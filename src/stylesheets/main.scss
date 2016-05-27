@@ -79,7 +79,7 @@ $nav_dimension: 400px;
 
 main {
 	@extend .precede_sticky_footer;
-	margin-top: 200px;
+	margin-top: 72px;
 }
 
 .shadow,
@@ -102,6 +102,10 @@ main {
 	display: flex;
 	padding: 30px;
 	transform: translate(300px, -100px) rotate(-30deg);
+
+	ol {
+		@extend .list-reset;
+	}
 
 	a,
 	a:hover {
@@ -133,19 +137,42 @@ footer {
 header {
 	@extend .pt4;
 	@extend .pagewidth;
+	max-width: 75%;
 
 	h1 {
+		@extend .mb2;
 		color: $colour_tone_1;
 		font-size: 4rem;
 		font-weight: 500;
 	}
 
 	h2 {
-		@extend .h1;
+		@extend .h2;
 	}
 
 	span {
 		color: $colour_bright;
+	}
+}
+
+nav {
+	@extend .mt2;
+
+	a {
+		@extend .mr1;
+		display: inline-block;
+		height: 2rem;
+		opacity: 0.2;
+		width: 2rem;
+	}
+
+	a:hover {
+		opacity: 1;
+	}
+
+	svg {
+		height: 100%;
+		width: 100%;
 	}
 }
 
