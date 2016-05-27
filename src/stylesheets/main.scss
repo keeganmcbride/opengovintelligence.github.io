@@ -14,15 +14,17 @@ $colour_tone_1: #ccc;
 // ==========================================================================
 
 $root-color: $colour_ink;
-$root-font-size: 100%;
 $root-font-family: 'Avenir', 'Avenir Next', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $monospace-font-family: 'Monaco', monospace;
 
 @import '../../node_modules/sanitize.css/lib/sanitize.sass';
 
-:root {
-	font-size: $root-font-size; // FIXME shouldn't be needed :(
+@media (min-width: 52em) {
+	:root {
+		font-size: 100%;
+	}
 }
+
 
 // MR RESETTI
 // re-re-set when the crowd say 'Bo, consistent and responsive.'
@@ -60,122 +62,28 @@ textarea {
 // house styles
 // ==========================================================================
 
+@import 'features/header';
 @import 'features/layout';
 @import 'features/links';
+@import 'features/nav';
 @import 'features/sticky';
 
 // WORK IN PROGGRESS
 // rough work here - but break out into a feature module asap
 // ==========================================================================
 
-body {
-	@extend .with_sticky_footer;
-	overflow-x: hidden;
-	position: relative;
-	width: 100%;
-}
-
-$nav_dimension: 400px;
-
-main {
-	@extend .precede_sticky_footer;
-	margin-top: 72px;
-}
-
-.shadow,
-.pink {
-	height: $nav_dimension;
-	position: absolute;
-	right: 0;
-	top: 0;
-	transform-origin: 0 100%;
-	width: $nav_dimension;
-}
-
-.shadow {
-	background: $colour_tone_1;
-	transform: translate(300px, -100px) skewX(30deg) rotate(-30deg) scale(1, 0.6);
-}
-
-.pink {
-	background: $colour_bright;
-	display: flex;
-	padding: 30px;
-	transform: translate(300px, -100px) rotate(-30deg);
-
-	ol {
-		@extend .list-reset;
-	}
-
-	a,
-	a:hover {
-		color: $colour_paper;
-		font-size: 1.8em;
-		font-weight: 500;
-		text-decoration: none;
-		text-transform: uppercase;
-	}
-
-	.selected,
-	a:hover {
-		font-weight: bold;
-		padding-left: 10px;
-		transition: padding-left 1s;
-	}
-}
-
-ol {
-	//align-self: flex-end;
-	align-self: center;
-
-}
 
 footer {
 	background: $colour_tone_1;
-}
 
-header {
-	@extend .pt4;
-	@extend .pagewidth;
-	max-width: 75%;
-
-	h1 {
-		@extend .mb2;
-		color: $colour_tone_1;
-		font-size: 4rem;
-		font-weight: 500;
-	}
-
-	h2 {
-		@extend .h2;
-	}
-
-	span {
-		color: $colour_bright;
-	}
-}
-
-nav {
-	@extend .mt2;
-
-	a {
-		@extend .mr1;
-		display: inline-block;
-		height: 2rem;
-		opacity: 0.2;
-		width: 2rem;
-	}
-
-	a:hover {
-		opacity: 1;
+	.pagewidth {
+		@extend .py2;
 	}
 
 	svg {
-		height: 100%;
-		width: 100%;
+		@extend .mb2;
 	}
 }
-
 
 h1,
 h2 {

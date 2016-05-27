@@ -1,6 +1,18 @@
 // LAYOUT
 // ==========================================================================
 
+body {
+	@extend .with_sticky_footer;
+	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+}
+
+main {
+	@extend .precede_sticky_footer;
+	@extend .mt3;
+}
+
 .pagewidth {
 	@extend .px3;
 }
