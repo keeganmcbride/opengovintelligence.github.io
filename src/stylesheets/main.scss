@@ -79,7 +79,7 @@ $nav_dimension: 400px;
 
 main {
 	@extend .precede_sticky_footer;
-	margin-top: $nav_dimension;
+	margin-top: 200px;
 }
 
 .shadow,
@@ -106,13 +106,17 @@ main {
 	a,
 	a:hover {
 		color: $colour_paper;
+		font-size: 1.8em;
 		font-weight: 500;
 		text-decoration: none;
+		text-transform: uppercase;
 	}
 
+	.selected,
 	a:hover {
 		font-weight: bold;
 		padding-left: 10px;
+		transition: padding-left 1s;
 	}
 }
 
@@ -124,4 +128,29 @@ ol {
 
 footer {
 	background: $colour_tone_1;
+}
+
+header {
+	@extend .pt4;
+	@extend .pagewidth;
+
+	h1 {
+		color: $colour_tone_1;
+		font-size: 4rem;
+		font-weight: 500;
+	}
+
+	h2 {
+		@extend .h1;
+	}
+
+	span {
+		color: $colour_bright;
+	}
+}
+
+
+h1,
+h2 {
+	font-weight: normal;
 }
