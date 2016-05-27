@@ -151,14 +151,19 @@ svg {
 
 /*! Basscss | http://basscss.com | MIT License */
 
+section h2 {
+  font-size: 21.333px;
+  font-size: 2rem;
+}
+
 header h2 {
   font-size: 16px;
   font-size: 1.5rem;
 }
 
-.list-reset {
-  list-style: none;
-  padding-left: 0;
+.grid_cell a img {
+  margin-top: 5.333px;
+  margin-top: .5rem;
 }
 
 header h2 {
@@ -177,6 +182,8 @@ body > nav li {
   margin-right: 1rem;
 }
 
+section h2,
+.grid_cell,
 body > nav,
 footer svg {
   margin-bottom: 10.666px;
@@ -200,6 +207,13 @@ body > nav {
   margin-top: 4rem;
 }
 
+.grid {
+  margin-left: -10.666px;
+  margin-left: -1rem;
+  margin-right: -10.666px;
+  margin-right: -1rem;
+}
+
 body > nav {
   padding: 5.333px;
   padding: .5rem;
@@ -211,6 +225,18 @@ footer .pagewidth {
   padding-top: 1rem;
   padding-bottom: 10.666px;
   padding-bottom: 1rem;
+}
+
+.grid_cell {
+  padding-left: 10.666px;
+  padding-left: 1rem;
+  padding-right: 10.666px;
+  padding-right: 1rem;
+}
+
+.grid_cell {
+  padding-bottom: 21.333px;
+  padding-bottom: 2rem;
 }
 
 .pagewidth,
@@ -225,6 +251,32 @@ body > nav .pink {
 header {
   padding-top: 42.666px;
   padding-top: 4rem;
+}
+
+.grid_cell {
+  width: 100%;
+}
+
+@media (min-width: 40em) {
+  .grid_cell {
+    width: 50%;
+  }
+}
+
+@media (min-width: 52em) {
+  .grid_cell {
+    width: 33.33333%;
+  }
+}
+
+.grid {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 header {
@@ -279,6 +331,11 @@ a,
 a:hover,
 a:visited {
   color: #e44690;
+}
+
+h3 a {
+  color: inherit;
+  text-decoration: none;
 }
 
 body > nav {
@@ -376,9 +433,19 @@ main {
 
 footer {
   background: #ccc;
+  font-size: 0.8em;
 }
 
 h1,
 h2 {
   font-weight: normal;
+}
+
+.grid_cell a {
+  display: block;
+  max-width: 100%;
+}
+
+.grid_cell a img {
+  max-width: 60%;
 }

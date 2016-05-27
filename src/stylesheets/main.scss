@@ -75,6 +75,7 @@ textarea {
 
 footer {
 	background: $colour_tone_1;
+	font-size: 0.8em;
 
 	.pagewidth {
 		@extend .py2;
@@ -88,4 +89,18 @@ footer {
 h1,
 h2 {
 	font-weight: normal;
+}
+
+.grid_cell {
+	@extend .pb3;
+}
+
+.grid_cell a {
+	display: block;
+	max-width: 100%;
+
+	img {
+		@extend .mt1;
+		max-width: 60%;
+	}
 }
