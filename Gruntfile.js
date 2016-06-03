@@ -8,15 +8,17 @@ module.exports = function(grunt) {
 
 	// DEFAULT TASK - $ grunt
 	grunt.registerTask('default', [
-		'clean',
+		//'clean',
+		'copy',
+		'stylesheets'
+	]);
 
-		// build stylesheets
+	grunt.registerTask('stylesheets', [
 		'scsslint',
 		'sass',
 		'uncss',
 		'postcss',
 		'parker'
-
 	]);
 
 	///////////////////////////////////////////////////////////////////////////
@@ -28,6 +30,7 @@ module.exports = function(grunt) {
 	require('time-grunt')(grunt);
 
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-parker');
 	grunt.loadNpmTasks('grunt-postcss');
 	grunt.loadNpmTasks('grunt-sass');
@@ -42,12 +45,30 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 
-		clean: ['stylesheets'],
+		clean: ['assets'],
+
+		copy: {
+			main: {
+				files: [
+					// includes files within path
+					//{expand: true, src: ['path/*'], dest: 'dest/', filter: 'isFile'},
+
+					// includes files within path and its sub-directories
+					{expand: true, src: ['src/images/**'], flatten: true, dest: 'assets/images/', filter: 'isFile'},
+
+					// makes all src relative to cwd
+					//{expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'},
+
+					// flattens results to a single level
+					//{expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile'},
+				],
+			},
+		},
 
 		parker: {
 			options: {},
 				src: [
-					'stylesheets/*.css'
+					'assets/stylesheets/*.css'
 				],
 		},
 
@@ -62,7 +83,7 @@ module.exports = function(grunt) {
 				]
 			},
 			dist: {
-				src: 'stylesheets/*.css'
+				src: 'assets/stylesheets/*.css'
 			}
 		},
 
@@ -72,7 +93,7 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'stylesheets/main.css': 'src/stylesheets/main.scss'
+					'assets/stylesheets/main.css': 'src/stylesheets/main.scss'
 				}
 			}
 		},
@@ -90,7 +111,7 @@ module.exports = function(grunt) {
 		uncss: {
 			dist: {
 				files: {
-					'stylesheets/main.css' : ['index.html']
+					'assets/stylesheets/main.css' : ['index.html']
 				}
 			}
 		}
