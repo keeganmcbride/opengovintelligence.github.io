@@ -1,6 +1,6 @@
 # opengovintelligence.github.io
 
-## To Build the CSS
+## To Build
 
 This project uses the GruntJS build system. If you've not used this before, you are strongly advised to Google it! :-)
 
@@ -12,6 +12,10 @@ First time:
 Subsequently
 
   grunt
+
+## To Edit the page content
+
+The pages are written using the handlebars templating format. In future we might support markdown.
 
 ## To Edit the CSS
 

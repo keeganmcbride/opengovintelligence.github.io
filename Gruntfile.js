@@ -10,6 +10,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		//'clean',
 		'copy',
+		'html',
 		'stylesheets'
 	]);
 
@@ -21,6 +22,10 @@ module.exports = function(grunt) {
 		'parker'
 	]);
 
+	grunt.registerTask('html', [
+		'assemble:default'
+	]);
+
 	///////////////////////////////////////////////////////////////////////////
 	//
 	//  LOAD packaged module tasks
@@ -29,6 +34,7 @@ module.exports = function(grunt) {
 
 	require('time-grunt')(grunt);
 
+	grunt.loadNpmTasks('grunt-assemble');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-parker');
@@ -45,22 +51,27 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 
-		clean: ['assets'],
+		assemble: {
+			options: {
+				marked: {sanitize: false},
+				production: true,
+				helpers: 'src/html/helpers/helper-*.js',
+				layoutdir: 'src/html/layouts',
+				partials: ['src/html/**/*.hbs'],
+			},
+			default: {
+				options: {layout: 'default.hbs'},
+				files: [{ expand: true, cwd: 'src/html/pages', src: ['*.hbs'], dest: './' }]
+			}
+		 },
+
+
+		clean: ['assets', 'index.html'],
 
 		copy: {
 			main: {
 				files: [
-					// includes files within path
-					//{expand: true, src: ['path/*'], dest: 'dest/', filter: 'isFile'},
-
-					// includes files within path and its sub-directories
 					{expand: true, src: ['src/images/**'], flatten: true, dest: 'assets/images/', filter: 'isFile'},
-
-					// makes all src relative to cwd
-					//{expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'},
-
-					// flattens results to a single level
-					//{expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile'},
 				],
 			},
 		},
