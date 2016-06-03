@@ -310,11 +310,25 @@ body {
 a,
 a:hover,
 a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a,
+a:hover,
+a:visited {
   color: #e44690;
 }
 
 h1 a,
-h3 a {
+h1 a:visited,
+h1 a:hover,
+h3 a,
+h3 a:visited,
+h3 a:hover {
   color: inherit;
   text-decoration: none;
 }
@@ -355,7 +369,13 @@ main {
 
 footer {
   background: #eee;
-  font-size: 0.8em;
+  font-size: 8.533px;
+  font-size: 0.8rem;
+}
+
+footer nav {
+  font-size: 10.666px;
+  font-size: 1rem;
 }
 
 h1,
