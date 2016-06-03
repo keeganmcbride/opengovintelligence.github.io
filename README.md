@@ -13,9 +13,10 @@ Subsequently
 
   grunt
 
-## To Edit the page content
+## To Edit page content
 
-The pages are written using the handlebars templating format. In future we might support markdown.
+You can write pages using either Markdown (for simple pages) or Handlebars (more complex pages).
+Pages with either a .md or a .hbs extension in src/html/pages will be compiled into html.
 
 ## To Edit the CSS
 

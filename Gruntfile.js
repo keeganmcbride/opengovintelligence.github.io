@@ -23,7 +23,8 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask('html', [
-		'assemble:default'
+		'assemble:default',
+		'assemble:markdown'
 	]);
 
 	///////////////////////////////////////////////////////////////////////////
@@ -62,11 +63,15 @@ module.exports = function(grunt) {
 			default: {
 				options: {layout: 'default.hbs'},
 				files: [{ expand: true, cwd: 'src/html/pages', src: ['*.hbs'], dest: './' }]
+			},
+			markdown: {
+				options: {layout: 'markdown.hbs'},
+				files: [{ expand: true, cwd: 'src/html/pages', src: ['*.md'], dest: './' }]
 			}
 		 },
 
 
-		clean: ['assets', 'index.html'],
+		clean: ['assets', '*.html'],
 
 		copy: {
 			main: {
@@ -122,7 +127,7 @@ module.exports = function(grunt) {
 		uncss: {
 			dist: {
 				files: {
-					'assets/stylesheets/main.css' : ['index.html']
+					'assets/stylesheets/main.css' : ['*.html']
 				}
 			}
 		}
