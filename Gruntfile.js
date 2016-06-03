@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
 	// DEFAULT TASK - $ grunt
 	grunt.registerTask('default', [
-		//'clean',
+		'clean',
 		'copy',
 		'html',
 		'stylesheets'
