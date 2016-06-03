@@ -12,6 +12,16 @@ header {
 		font-size: 3rem;
 		font-weight: 500;
 		line-height: 1em;
+
+		a,
+		a:visited {
+			color: $colour_tone_1;
+			transition: color 0.5s;
+		}
+
+		a:hover {
+			color: $colour_bright;
+		}
 	}
 
 	h2 {
@@ -19,7 +29,7 @@ header {
 		@extend .mb1;
 	}
 
-	span {
+	.bright {
 		color: $colour_bright;
 	}
 

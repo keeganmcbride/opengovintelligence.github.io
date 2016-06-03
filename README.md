@@ -16,7 +16,7 @@ Subsequently
 ## To Edit page content
 
 You can write pages using either Markdown (for simple pages) or Handlebars (more complex pages).
-Pages with either a .md or a .hbs extension in src/html/pages will be compiled into html.
+Pages with either a .md or a .hbs extension in src/html/pages will be compiled into html when you run the grunt command
 
 ## To Edit the CSS
 
