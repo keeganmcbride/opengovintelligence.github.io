@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask('stylesheets', [
-		// 'scsslint',
+		'scsslint',
 		'sass',
 		'uncss',
 		'postcss',

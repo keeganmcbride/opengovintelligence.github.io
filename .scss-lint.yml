@@ -112,7 +112,7 @@ linters:
     enabled: true
     convention: snake_case # or 'BEM', or 'hyphenated_lowercase', or 'camel_case', or a regex pattern
     exclude:
-      - 'src/stylesheets/utilities/_flexgrid.scss' # FIXME: temporary
+      - 'src/stylesheets/features/_tooltip.scss'
 
   Shorthand:
     enabled: true
