@@ -8,6 +8,7 @@ $colour_ink: #000;
 $colour_bright: #e44690;
 
 $colour_tone_1: #ccc;
+$colour_tone_2: #eee;
 
 // SANITIZE
 // configurable reset
@@ -74,7 +75,7 @@ textarea {
 
 
 footer {
-	background: $colour_tone_1;
+	background: $colour_tone_2;
 	font-size: 0.8em;
 
 	.pagewidth {
