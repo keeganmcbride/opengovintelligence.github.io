@@ -373,6 +373,10 @@ body > nav a:visited {
   color: #fff;
 }
 
+body > nav .selected {
+  font-weight: bold;
+}
+
 body {
   display: -ms-flexbox;
   display: flex;
@@ -544,6 +548,7 @@ blockquote *:last-child {
     text-transform: uppercase;
   }
 
+  body > nav .selected,
   body > nav a:hover {
     font-weight: bold;
     padding-left: 10px;

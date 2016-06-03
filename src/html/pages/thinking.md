@@ -1,3 +1,7 @@
+---
+thinking: true
+---
+
 ## Conference Papers
 
 ### Open Statistics: The Rise of a new Era for Open Data?
