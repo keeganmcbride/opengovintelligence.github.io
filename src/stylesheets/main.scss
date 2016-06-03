@@ -109,3 +109,28 @@ h2 {
 		max-width: 60%;
 	}
 }
+
+h1 {
+	@extend .h1;
+}
+
+h2 {
+	@extend .h2;
+	@extend .mb2;
+}
+
+h3 {
+	@extend .h3;
+	@extend .mb1;
+}
+
+blockquote {
+	border-left: 0.3rem solid $colour_tone_1;
+	font-style: italic;
+	margin: 1rem 0;
+	padding: 0 1.5rem;
+}
+
+blockquote *:last-child {
+	margin: 0;
+}

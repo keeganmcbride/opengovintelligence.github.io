@@ -145,14 +145,21 @@ svg {
 
 /*! Basscss | http://basscss.com | MIT License */
 
-section h2 {
+section h2,
+h1 {
   font-size: 21.333px;
   font-size: 2rem;
 }
 
-header h2 {
+header h2,
+h2 {
   font-size: 16px;
   font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 13.333px;
+  font-size: 1.25rem;
 }
 
 .grid_cell a img {
@@ -160,7 +167,8 @@ header h2 {
   margin-top: .5rem;
 }
 
-header h2 {
+header h2,
+h3 {
   margin-bottom: 5.333px;
   margin-bottom: .5rem;
 }
@@ -179,7 +187,8 @@ body > nav li {
 section h2,
 .grid_cell,
 body > nav,
-footer svg {
+footer svg,
+h2 {
   margin-bottom: 10.666px;
   margin-bottom: 1rem;
 }
@@ -390,6 +399,20 @@ h2 {
 
 .grid_cell a img {
   max-width: 60%;
+}
+
+blockquote {
+  border-left: 3.2px solid #ccc;
+  border-left: 0.3rem solid #ccc;
+  font-style: italic;
+  margin: 10.666px 0;
+  margin: 1rem 0;
+  padding: 0 16px;
+  padding: 0 1.5rem;
+}
+
+blockquote *:last-child {
+  margin: 0;
 }
 
 @media (min-width: 52em) {
