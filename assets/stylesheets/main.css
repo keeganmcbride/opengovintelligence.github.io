@@ -136,6 +136,7 @@ nav ol {
 
 html {
   -webkit-font-smoothing: antialiased;
+  height: 100%;
 }
 
 img,
@@ -386,8 +387,8 @@ body {
 }
 
 main {
-  -ms-flex: 1;
-      flex: 1;
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
 }
 
 *[data-tooltip] {
@@ -567,5 +568,12 @@ blockquote *:last-child {
 
   header h1 {
     font-size: 4rem;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+  body {
+    height: 100%;
   }
 }
