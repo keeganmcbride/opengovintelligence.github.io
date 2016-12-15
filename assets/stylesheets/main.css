@@ -491,7 +491,16 @@ blockquote *:last-child {
 
 p + h2,
 p + h3 {
-  margin-top: 2em;
+  margin-top: 1em;
+}
+
+p,
+ul {
+  margin-bottom: 1em;
+}
+
+ul {
+  margin-left: 1em;
 }
 
 @media (min-width: 52em) {
