@@ -127,3 +127,8 @@ blockquote {
 blockquote *:last-child {
 	margin: 0;
 }
+
+p + h2,
+p + h3 {
+	margin-top: 2em;
+}
