@@ -22,6 +22,8 @@ _E. Kalampokis, E. Tambouris, K. Tarabanis (2016) Linked Open Cube Analytics Sys
 
 ### Linked data cubes: Research results so far
 
+> During the last years a growing body of literature studied Linked Data Cubes. The objective of this paper is to accumulate this body of knowledge and provide a preliminary analysis of the research re- sults in the area so far. Towards this end, we systematically reviewed the scientific literature to identify relevant studies. These studies were anal- ysed and synthesised in the form of a proposed conceptual framework, which was thereafter applied to further analyse this literature, hence gaining new insights into the field. The framework comprises three di- mensions, namely category of contribution, step of data analysis, and application area. The application of the framework resulted in interest- ing findings. For example, the majority of the contributions that focus on publishing linked data cubes are cases while the majority of the ex- ploitation contributions are software tools. Moreover, integration of data cubes remains largely unexamined in the literature. This paper, however, does not present the final results of the analysis of the literature as this is still an ongoing activity.
+
 _A. Karamanou, E. Kalampokis, E. Tambouris, K. Tarabanis (2016) Linked data cubes: Research results so far, SemStats2016 in conjuction with the 15th International Semantic Web Conference (ISWC2016), 17-21 October 2016, Kobe, Japan, CEUR-WS_
 
 
