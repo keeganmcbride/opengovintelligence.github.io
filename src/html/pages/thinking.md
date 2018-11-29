@@ -52,3 +52,9 @@ https://www.researchgate.net/publication/326060121_Open_Government_Data_Driven_C
 > A book chapter about open data and co-creation building on our OGI pilots’ experience is currently in press:
 
 _McBride, K.; Toots, M.; Kalvet, T.; Krimmer, R. (2018). Turning Open Government Data into Public Value: Testing the COPS Framework for the Co-Creation of OGD-Driven Public Services. In: M. P. Rodriguez Bolivar, K. J. Bwalya, C. Reddick (Ed.). Governance Models for Creating Public Values in Open Data Initiatives. Springer. (Public Administration and Information Technology)_
+
+> A paper in Government Information Quarterly, November 2018
+
+_McBride, K.; Aavik, G.; Toots, M.; Kalvet, T.;  Krimmer, R. (2018). How does open government data driven co-creation occur? Six factors and a ‘perfect storm’; insights from Chicago's food inspection forecasting model._ [Science Direct link](https://www.sciencedirect.com/science/article/pii/S0740624X18302417).
+
+
