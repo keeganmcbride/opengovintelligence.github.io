@@ -11,7 +11,7 @@
   "private": true,
   "main": "",
   "devDependencies": {
-    "autoprefixer": "6.3.6",
+    "autoprefixer": "^9.4.7",
     "basscss": "8.0.1",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
