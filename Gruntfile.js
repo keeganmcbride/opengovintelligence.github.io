@@ -95,7 +95,7 @@ module.exports = function(grunt) {
 					require('css-mqpacker')(),
 					require('pixrem')(), // add fallbacks for rem units
 					require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
-					// require('cssnano')() // minify the result
+					require('cssnano')() // minify the result
 				]
 			},
 			dist: {
