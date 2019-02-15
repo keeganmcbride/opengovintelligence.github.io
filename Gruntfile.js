@@ -1,3 +1,6 @@
+const sass = require('node-sass');
+
+
 module.exports = function(grunt) {
 
 	///////////////////////////////////////////////////////////////////////////
@@ -103,6 +106,7 @@ module.exports = function(grunt) {
 
 		sass: {
 			options: {
+				implementation: sass,
 				sourceMap: false
 			},
 			dist: {
