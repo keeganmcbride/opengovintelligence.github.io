@@ -1,3 +1,6 @@
+const sass = require('node-sass');
+
+
 module.exports = function(grunt) {
 
 	///////////////////////////////////////////////////////////////////////////
@@ -15,7 +18,6 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask('stylesheets', [
-		'scsslint',
 		'sass',
 		'uncss',
 		'postcss',
@@ -41,7 +43,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-parker');
 	grunt.loadNpmTasks('grunt-postcss');
 	grunt.loadNpmTasks('grunt-sass');
-	grunt.loadNpmTasks('grunt-scss-lint');
 	grunt.loadNpmTasks('grunt-uncss');
 
 	///////////////////////////////////////////////////////////////////////////
@@ -95,7 +96,7 @@ module.exports = function(grunt) {
 					require('css-mqpacker')(),
 					require('pixrem')(), // add fallbacks for rem units
 					require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
-					// require('cssnano')() // minify the result
+					require('cssnano')() // minify the result
 				]
 			},
 			dist: {
@@ -105,6 +106,7 @@ module.exports = function(grunt) {
 
 		sass: {
 			options: {
+				implementation: sass,
 				sourceMap: false
 			},
 			dist: {
@@ -112,16 +114,6 @@ module.exports = function(grunt) {
 					'assets/stylesheets/main.css': 'src/stylesheets/main.scss'
 				}
 			}
-		},
-
-		scsslint: {
-			allFiles: [
-				'src/stylesheets/{,*/}*.{scss,sass}',
-			],
-			options: {
-				bundleExec: true,
-				config: '.scss-lint.yml'
-			},
 		},
 
 		uncss: {
