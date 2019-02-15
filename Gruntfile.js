@@ -15,7 +15,6 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask('stylesheets', [
-		'scsslint',
 		'sass',
 		'uncss',
 		'postcss',
@@ -41,7 +40,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-parker');
 	grunt.loadNpmTasks('grunt-postcss');
 	grunt.loadNpmTasks('grunt-sass');
-	grunt.loadNpmTasks('grunt-scss-lint');
 	grunt.loadNpmTasks('grunt-uncss');
 
 	///////////////////////////////////////////////////////////////////////////
@@ -112,16 +110,6 @@ module.exports = function(grunt) {
 					'assets/stylesheets/main.css': 'src/stylesheets/main.scss'
 				}
 			}
-		},
-
-		scsslint: {
-			allFiles: [
-				'src/stylesheets/{,*/}*.{scss,sass}',
-			],
-			options: {
-				bundleExec: true,
-				config: '.scss-lint.yml'
-			},
 		},
 
 		uncss: {
