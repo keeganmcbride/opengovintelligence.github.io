@@ -2,13 +2,9 @@
   "name": "OpenGovIntelligence",
   "version": "1.0.0",
   "description": "front end assets for the OpenGovIntelligence website",
-  "copyright": "Swirrl ©2014-6",
+  "copyright": "Swirrl ©2014-9",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/swirrl/girder.git"
   },
   "author": "hello@swirrl.com",
   "license": "UNLICENSED",
