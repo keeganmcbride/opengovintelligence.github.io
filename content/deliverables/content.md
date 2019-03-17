@@ -1,0 +1,26 @@
+# Project Deliverables
+
+As part of our obligations to the European Union's Horizon 2020 research and innovation programme we are required to publish interim reports on the projects activity in accordance with our description of work. Downloads of these reports can be found below:
+
+*   [D1.1 - Challenges and Needs](/downloads/deliverables/OGI_D1.1_OpenGovIntelligence challenges and needs_v1.0.pdf)
+*   [D2.1 - Framework 1st Release](/downloads/deliverables/OGI_D2.1 OpenGovIntelligence framework 1st release_v0.1.pdf)
+*   [D2.2 - OpenGovIntelligence framework](/downloads/deliverables/OGI_D2.2_OpenGovIntelligence%20Framework_v1.0.pdf)
+*   [D3.1 - ICT Tools 1st Release](/downloads/deliverables/OGI_D3.1_OpenGovIntelligence_ICT_tools_-_first_release_v1.0.pdf)
+*   [D3.2 - Report on ICT Tools 1st Release](/downloads/deliverables/OGI_D3.2_Report_on_OpenGovIntelligence_ICT_tools_-_first_release_v1.0.pdf)
+*   [D3.3 - OpenGovIntelligence ICT tools – second release](/downloads/deliverables/OGI_D3.3%20-%20OpenGovIntelligence%20ICT%20tools%20%E2%80%93%20second%20release%20-%20v1.0.pdf)
+*   [D3.4 - Report on OpenGovIntelligence ICT tools – second release](/downloads/deliverables/OGI_D3.4%20-%20Report%20on%20OpenGovIntelligence%20ICT%20tools%20%E2%80%93%20second%20release%20-%20v1.0.pdf)
+*   [D3.5 - OpenGovIntelligence ICT tools](/downloads/deliverables/OGI_D3.5%20-%20OpenGovIntelligence%20ICT%20tools%20-%20v1.0.pdf)
+*   [D3.6 - Report on OpenGovIntelligence ICT tools](/downloads/deliverables/OGI_D3.6%20-%20Report%20on%20OpenGovIntelligence%20ICT%20tools%20-%20v1.0.pdf)
+*   [D4.1 - Pilots and Evaluation Plan - v1](/downloads/deliverables/OGI_D4 1_Pilots_Evaluation_Plan_v1_1.0.pdf)
+*   [D4.2 - Evaluation results - First round](/downloads/deliverables/OGI_D4.2%20Evaluation_Results-First_Round_v1.0.pdf)
+*   [D4.3 - Pilots and Evaluation plan-v2](/downloads/deliverables/OGI_D4.3_Pilots_and_Evaluation_Plan-v2_v1.0.pdf)
+*   [D4.4 - Pilots Evaluation results - Second round](/downloads/deliverables/OGI_D4.4_Pilots_Evaluation_results_Second_round_v1.0%20(1).pdf)
+*   [D4.5 - Pilots and Evaluation plan-v3](/downloads/deliverables/OGI_D4.5_Pilots_and_Evaluation_Plan_v1.0.pdf)
+*   [D4.6 - Pilots Evaluation results- Third round](/downloads/deliverables/OGI_D4.6_Pilots%20Evaluation%20Results%20Third%20Round_v1.pdf)
+*   [D4.7 - Recommendations and tutorials for opening up and exploiting statistical data](/downloads/deliverables/OGI_D4.7__Recommendations_and_tutorials_for_opening-up_and_exploiting_statistical_data_v1.0.pdf)
+*   [D5.2 - Report on dissemination activities-Y1](/downloads/deliverables/OGI_D5.2%20Report_on_Dissemination_Activities_Y1_v1.0.pdf)
+*   [D5.3 - Report on dissemination activities-Y2](/downloads/deliverables/OGI_D5.3_Report_on_Dissemination_Activities_Y2_v1.0.pdf)
+*   [D5.4 - Report on dissemination activities-Y3](/downloads/deliverables/OGI_D5.4_Report%20on%20Dissemination%20Activities%20-%20Y3_v1.pdf)
+*   [D5.9 - Policy Brief](/downloads/deliverables/OGI_D5.9_OpenGovIntelligence Policy Brief_v2.pdf)
+*   [D6.1 - Data Management Plan](/downloads/deliverables/OGI_D6.1 Data Management Plan_v4.pdf)
+*   [D6.5 - Ethics Policy](/downloads/deliverables/OGI_D6.5_Ethics Policy_v7.pdf)

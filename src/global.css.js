@@ -34,7 +34,7 @@ export default createGlobalStyle`
   }
 
   body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: 'Avenir', 'Avenir Next', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif , "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     line-height: 1;
     font-size: 1.6rem;
     color: #000;
@@ -69,6 +69,8 @@ export default createGlobalStyle`
 
   a {
     color: ${accent};
+    font-weight: 400;
+    text-decoration: none;
   }
 
   pre {
@@ -88,7 +90,36 @@ export default createGlobalStyle`
     max-width: 100%;
   }
 
+  ul,
   p {
     margin-bottom: 2rem;
+  }
+
+  li {
+    display: block;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+        margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
   }
 `;

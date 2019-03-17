@@ -1,0 +1,39 @@
+{
+  "title": "Pilots",
+  "content": "content.md",
+  "gallery": [{
+      "title": "Trafford",
+      "copy": "",
+      "link": "https://medium.com/opengovintelligence/reducing-work-ness-with-linked-data-498774e4e8cd",
+      "image": "../images/pilots/placeholder.png"
+    },
+    {
+      "title": "Flemish government",
+      "copy": "",
+      "link": "https://medium.com/opengovintelligence/ogi-at-the-department-of-environment-and-spatial-planning-of-the-flemish-government-5b82990d457d",
+      "image": "../images/pilots/placeholder.png"
+    },
+    {
+      "title": "Greek government",
+      "copy": "",
+      "link": "https://medium.com/opengovintelligence/using-linked-open-statistical-data-to-enhance-executive-decision-making-in-greek-public-47c3fb316f3a",
+      "image": "../images/pilots/placeholder.png"
+    },
+    {
+      "title": "Irish Marine Institute",
+      "copy": "",
+      "link": "https://medium.com/opengovintelligence/making-environmental-data-flows-into-linked-open-statistical-data-dc054d6b2d74",
+      "image": "../images/pilots/placeholder.png"
+    }, {
+      "title": "Estonian Government",
+      "copy": "",
+      "link": "https://medium.com/opengovintelligence/co-creating-a-real-estate-portal-from-open-government-data-fccb85c9d910",
+      "image": "../images/pilots/placeholder.png"
+    }, {
+      "title": "Lithuanian Government",
+      "copy": "",
+      "link": "https://medium.com/opengovintelligence/the-lithuanian-pilot-a-market-research-solution-3330346a7131",
+      "image": "../images/pilots/placeholder.png"
+    }
+  ]
+}

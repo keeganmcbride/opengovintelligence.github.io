@@ -1,4 +1,77 @@
 {
   "title": "About",
-  "content": "content.md"
+  "content": "content.md",
+  "gallery": [{
+      "title": "Centre for Research & Technology - Hellas",
+      "copy": "Greece",
+      "link": "http://www.certh.gr/root.en.aspx",
+      "image": "../images/partners/certh.png"
+    },
+    {
+      "title": "Delft University of Technology",
+      "copy": "Netherlands",
+      "link": "http://www.tudelft.nl/",
+      "image": "../images/partners/tu_delft.png"
+    },
+    {
+      "title": "National University of Ireland, Galway",
+      "copy": "Ireland",
+      "link": "http://www.insight-centre.org/",
+      "image": "../images/partners/insight.png"
+    },
+    {
+      "title": "Tallinn University of Technology",
+      "copy": "Estonia",
+      "link": "http://ttu.ee/",
+      "image": "../images/partners/tut.png"
+    },
+    {
+      "title": "ProXML bvba",
+      "copy": "Belgium",
+      "link": "http://www.proxml.be/",
+      "image": "../images/partners/proxml.png"
+    },
+    {
+      "title": "Swirrl IT Limited",
+      "copy": "UK",
+      "link": "http://swirrl.com/",
+      "image": "../images/partners/swirrl.png"
+    },
+    {
+      "title": "Trafford Council",
+      "copy": "UK",
+      "link": "https://www.trafford.gov.uk/",
+      "image": "../images/partners/trafforddatalab_logo.png"
+    },
+    {
+      "title": "Flemish Government",
+      "copy": "Belgium",
+      "link": "http://www.lne.be/",
+      "image": "../images/partners/flanders.png"
+    },
+    {
+      "title": "Ministry of Interior and Administrative Reconstruction",
+      "copy": "Greece",
+      "link": "http://www.ydmed.gov.gr",
+      "image": "../images/partners/miar.png"
+    },
+    {
+      "title": "Ministry of Economic Affairs and Communication",
+      "copy": "Estonia",
+      "link": "https://www.mkm.ee/en",
+      "image": "../images/partners/meac.png"
+    },
+    {
+      "title": "Marine Institute",
+      "copy": "Ireland",
+      "link": "http://www.marine.ie/Home/",
+      "image": "../images/partners/mi.png"
+    },
+    {
+      "title": "Public Institution Enterprise Lithuania",
+      "copy": "Lithuania",
+      "link": "http://www.enterpriselithuania.com/en",
+      "image": "../images/partners/piel.png"
+    }
+  ]
 }

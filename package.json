@@ -1,7 +1,6 @@
 {
-  "name": "gatsby-universal",
-  "license": "MIT",
-  "author": "Fabian Schultz <desk@fabianschultz.com>",
+  "name": "OGI",
+  "license": "none",
   "scripts": {
     "develop": "gatsby develop",
     "serve": "gatsby serve",

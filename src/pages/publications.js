@@ -1,36 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
-import Title from 'components/title';
-import { graphql } from 'gatsby';
+import Head from 'components/head';
 
-const Index = ({ data }) => (
+const Publications = ({ data }) => (
   <Layout>
+    <Head pageTitle={data.publicationsJson.title} />
     <Box>
       <div
         dangerouslySetInnerHTML={{
-          __html: data.homeJson.content.childMarkdownRemark.html,
+          __html: data.publicationsJson.content.childMarkdownRemark.html,
         }}
       />
     </Box>
   </Layout>
 );
 
-Index.propTypes = {
+Publications.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default Index;
+export default Publications;
 
 export const query = graphql`
-  query HomepageQuery {
-    homeJson {
+  query PublicationsQuery {
+    publicationsJson {
       title
       content {
         childMarkdownRemark {
           html
-          rawMarkdownBody
         }
       }
     }
