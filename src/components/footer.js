@@ -1,13 +1,15 @@
 import React from 'react';
+import { withPrefix } from 'gatsby'
 
 const Footer = () => (
   <footer>
     <nav>
-				<a  href="http://twitter.com/opengovint"><img src="assets/images/twitter.svg" alt="Twitter"></a>
-				<a href="https://github.com/OpenGovIntelligence"><img src="assets/images/github.svg" alt="Github"></a>
-				<a href="http://www.slideshare.net/opengovintelligence"><img src="assets/images/slideshare.svg" alt="Slideshare"></a>
-				<a   href="http://eepurl.com/b2-_Dj"><img src="assets/images/mail-with-circle.svg" alt="Mailing list"></a>
-			</nav>
+      <a href='http://twitter.com/opengovint'><img src={withPrefix('twitter.svg')} alt='Twitter ' /></a>
+        <a href="https://github.com/OpenGovIntelligence"><img src={withPrefix('github.svg')} alt="Github" /></a>
+        <a href="http://www.slideshare.net/opengovintelligence"><img src={withPrefix('slideshare.svg')} alt="Slideshare" /></a>
+        <a   href="http://eepurl.com/b2-_Dj"><img src={withPrefix('mail-with-circle.svg')} alt="Mailing list" /></a>
+
+  </nav>
     <div>
       <div className="svg_holder">
         <svg width="81" height="54">
