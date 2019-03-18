@@ -22,10 +22,25 @@ html * {
 }
 
 body {
-  background: #fc0;
+  font-family: 'Avenir', 'Avenir Next', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif , "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 21px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "pnum";
+  font-feature-settings: "pnum";
+  font-variant-numeric: proportional-nums;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+}
 
-a {
-  text-decoration: none;
+.Box {
+  padding: 2rem 4rem;
+  max-width: 700px;
 }

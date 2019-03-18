@@ -23,7 +23,6 @@ const Nav = () => (
       <li>
         <a href="https://medium.com/opengovintelligence">Blog</a>
       </li>
-
     </ul>
   </Container>
 );
