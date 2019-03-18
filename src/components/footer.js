@@ -3,10 +3,10 @@ import React from 'react';
 const Footer = () => (
   <footer>
     <nav>
-				<a data-tooltip="Twitter" href="http://twitter.com/opengovint"><img src="assets/images/twitter.svg" alt="Twitter"></a>
-				<a data-tooltip="Github" href="https://github.com/OpenGovIntelligence"><img src="assets/images/github.svg" alt="Github"></a>
-				<a data-tooltip="Slideshare" href="http://www.slideshare.net/opengovintelligence"><img src="assets/images/slideshare.svg" alt="Slideshare"></a>
-				<a data-tooltip="Mailing list" href="http://eepurl.com/b2-_Dj"><img src="assets/images/mail-with-circle.svg" alt="Mailing list"></a>
+				<a  href="http://twitter.com/opengovint"><img src="assets/images/twitter.svg" alt="Twitter"></a>
+				<a href="https://github.com/OpenGovIntelligence"><img src="assets/images/github.svg" alt="Github"></a>
+				<a href="http://www.slideshare.net/opengovintelligence"><img src="assets/images/slideshare.svg" alt="Slideshare"></a>
+				<a   href="http://eepurl.com/b2-_Dj"><img src="assets/images/mail-with-circle.svg" alt="Mailing list"></a>
 			</nav>
     <div>
       <div className="svg_holder">
