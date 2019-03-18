@@ -1,3 +1,31 @@
+@import '../../node_modules/normalize.css/normalize.css';
+
+html * {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+@breakpoints {
+	desktop: 1024px;
+	phone: 480px;
+}
+
+@media-queries {
+  small: <=phone;
+	medium: <=desktop >phone;
+  large: >desktop;
+}
+
 body {
   background: #fc0;
+}
+
+
+a {
+  text-decoration: none;
 }
