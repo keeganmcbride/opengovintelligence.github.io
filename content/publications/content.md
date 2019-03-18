@@ -1,6 +1,8 @@
 # Publications
 
-## Journal Publications
+Quicklinks: [journals](#journals) | [conference papers](#papers) | [Book chapters](#chapters)
+
+<h2 id="journals">Journal Publications</h2>
 
 ### On modelling linked open statistical data.
 
@@ -38,7 +40,7 @@ _E. Kalampokis, E. Tambouris, K. Tarabanis (2016) Linked Open Cube Analytics Sys
 
 _E. Tambouris (2016). Multidimensional Open Government Data. eJournal of eDemocracy and Open Government (JEDEM), Vol. 8, Num. 3, pp. 1-11_ [https://doi.org/10.29379/jedem.v8i3.444](https://doi.org/10.29379/jedem.v8i3.444)
 
-## Conference Papers
+<h2 id="papers">Conference Papers</h2>
 
 ### Is Government Welfare Able to Change? Analysing Efforts to Co-create an Improved Social Welfare System through Taking Advantage of a Collaborative Economy.
 
@@ -172,7 +174,7 @@ _R. Matheus & Μ. Janssen (2016). 9th international conference on theory and pra
 
 _M. Toots, T. Kalvet, R. Krimmer. (2016). Success in eVoting – Success in eDemocracy? The Estonian Paradox. 15th IFIP Electronic Government (EGOV) and 8th Electronic Participation (ePart) Conference. Guimarães, Portugal. [https://doi.org/10.1007/978-3-319-45074-2\_5](https://doi.org/10.1007/978-3-319-45074-2_5)_
 
-## Book chapters
+<h2 id="chapters">Book chapters</h2>
 
 ### Turning Open Government Data into Public Value: Testing the COPS Framework for the Co-Creation of OGD-Driven Public Services
 
