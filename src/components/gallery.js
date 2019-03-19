@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Item from 'components/item';
-import { Container } from './gallery.css';
 
 const Gallery = ({ items }) => (
-  <Container>
+  <div className="Gallery">
     {items.map((item, i) => (
       <Item {...item} key={i} />
     ))}
-  </Container>
+  </div>
 );
 
 Gallery.propTypes = {

@@ -2,18 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import posed from 'react-pose';
-import Title from 'components/title';
 import Nav from 'components/nav';
 
 const AnimatedContainer = posed.div({
   enter: {
     y: 0,
+    opacity: 1,
     transition: {
       ease: 'easeInOut',
     },
   },
   exit: {
-    y: '-100%',
+    y: '-5%',
+    opacity: 0,
     transition: {
       ease: 'easeInOut',
     },
@@ -22,11 +23,10 @@ const AnimatedContainer = posed.div({
 
 const Header = ({ title }) => (
   <AnimatedContainer>
-    <header>
+    <header className="reverse">
       <Link to="/">
-        <Title as="h1">opengovintelligence</Title>
+          open<span>gov</span>intelligence
       </Link>
-
       <Nav />
     </header>
   </AnimatedContainer>

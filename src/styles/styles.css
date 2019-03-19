@@ -1,5 +1,16 @@
 @import '../../node_modules/normalize.css/normalize.css';
 
+@breakpoints {
+  desktop: 1024px;
+  phone: 480px;
+}
+
+@media-queries {
+  small: <=phone;
+  medium: <=desktop >phone;
+  large: >desktop;
+}
+
 html * {
   box-sizing: border-box;
 }
@@ -10,19 +21,8 @@ html * {
   padding: 0;
 }
 
-@breakpoints {
-	desktop: 1024px;
-	phone: 480px;
-}
-
-@media-queries {
-  small: <=phone;
-	medium: <=desktop >phone;
-  large: >desktop;
-}
-
 body {
-  font-family: 'Avenir', 'Avenir Next', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif , "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: 'Avenir', 'Avenir Next', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 21px;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -33,23 +33,123 @@ body {
   font-variant-numeric: proportional-nums;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4rem;
-}
-
 .Box {
-  padding: 2rem 4rem;
+  padding: 0 4rem 2rem;
   max-width: 700px;
 }
 
-
 footer {
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 4rem;
 }
-footer img {
 
+footer img {
   width: 2rem;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  margin: 2rem 0;
+}
+
+p, li, blockquote {
+  line-height: 1.4;
+}
+
+blockquote {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #eee;
+  font-size: 18px;
+  font-style: italic;
+}
+
+em {
+  font-size: 18px;
+}
+
+p, li {
+  margin-bottom: 1rem;
+}
+
+ul, li {
+  list-style: none;
+  text-indent: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+  color: #e44690;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #ccc;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+
+  > a span {
+    flex: 1;
+      font-weight: 600;
+  }
+
+  nav {
+    display: flex;
+
+
+    a {
+          flex: 1;
+      text-transform: lowercase;
+      font-variant: small-caps;
+      padding-right: 2rem;
+    }
+  }
+}
+
+footer nav a {
+  opacity: 0.2;
+  margin-right: 1rem;
+}
+
+footer nav a:hover {
+  opacity: 0.4;
+}
+
+footer nav {
+  margin-bottom: 2rem;
+}
+
+.svg_holder {
+  margin-right: 1rem;
+  float: left;
+}
+
+.Gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+  padding: 0 4rem;
+  margin: 0;
+}
+
+.Gallery img {
+  filter: grayscale(100%);
+}
+
+.reverse {
+  background: #e44690;
+  color: #fff;
+
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #fff;
+  }
 }

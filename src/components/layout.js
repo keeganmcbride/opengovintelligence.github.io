@@ -6,8 +6,8 @@ import Header from 'components/header';
 import Footer from 'components/footer';
 import 'styles/styles.css';
 
-const Layout = ({ data, children }) => (
-  <div>
+const Layout = ({ data, children, addClass }) => (
+  <div className={addClass}>
     <Head />
     <Header title={data.site.siteMetadata.siteTitle} />
     {children}
@@ -18,6 +18,7 @@ const Layout = ({ data, children }) => (
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   data: PropTypes.object.isRequired,
+  addClass: PropTypes.string,
 };
 
 const LayoutWithQuery = props => (

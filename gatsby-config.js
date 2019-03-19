@@ -5,6 +5,7 @@ module.exports = {
     ...siteConfig,
   },
   plugins: [
+        'gatsby-plugin-postcss',
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,

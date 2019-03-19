@@ -6,7 +6,7 @@ import Title from 'components/title';
 import { graphql } from 'gatsby';
 
 const Index = ({ data }) => (
-  <Layout>
+  <Layout addClass="reverse">
     <Box>
       <div
         dangerouslySetInnerHTML={{
