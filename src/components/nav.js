@@ -1,28 +1,29 @@
 import React from 'react';
-import {Link} from 'gatsby';
+import { Link } from 'gatsby';
 
-const Nav = () => (<nav>
-  <input type="checkbox" id="toggle" />
-<label htmlFor="toggle" id="menuToggle">
-  <span />
-  <span />
-  <span />
-</label>
+const Nav = () => (
+  <nav>
+    <input type="checkbox" id="toggle" />
+    <label htmlFor="toggle" id="menuToggle">
+      <span />
+      <span />
+      <span />
+    </label>
 
-  <div>
-    <Link to="/about">About</Link>
+    <div>
+      <Link to="/about">About</Link>
 
-    <Link to="/pilots">Pilots</Link>
+      <Link to="/pilots">Pilots</Link>
 
-    <Link to="/publications">Publications</Link>
+      <Link to="/publications">Publications</Link>
 
-    <Link to="/software">Software</Link>
+      <Link to="/software">Software</Link>
 
-    <Link to="/deliverables">Deliverables</Link>
+      <Link to="/deliverables">Deliverables</Link>
 
-    <a href="https://medium.com/opengovintelligence">Blog</a>
-  </div>
-
-</nav>);
+      <a href="https://medium.com/opengovintelligence">Blog</a>
+    </div>
+  </nav>
+);
 
 export default Nav;

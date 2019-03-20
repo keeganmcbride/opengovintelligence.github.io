@@ -207,7 +207,7 @@ footer {
   color: #fff;
 
   .Box {
-background: #e44690;
+    background: #e44690;
   }
 
   h2 {
@@ -232,7 +232,6 @@ background: #e44690;
 }
 
 @media large {
-
   .Gallery {
     grid-template-columns: repeat(4, 1fr);
   }

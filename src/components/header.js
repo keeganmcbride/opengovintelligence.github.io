@@ -25,7 +25,7 @@ const Header = ({ title }) => (
   <AnimatedContainer>
     <header className="reverse">
       <Link to="/">
-          open<span>gov</span>intelligence
+        open<span>gov</span>intelligence
       </Link>
       <Nav />
     </header>
