@@ -89,22 +89,15 @@ h1 {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1rem 4rem;
 
-  > a span {
-    flex: 1;
-      font-weight: 600;
+  >a span {
+    font-weight: 600;
   }
 
   nav {
-    display: flex;
-
-
     a {
-          flex: 1;
+      display: block;
       text-transform: lowercase;
       font-variant: small-caps;
       padding-right: 2rem;
@@ -151,5 +144,107 @@ footer nav {
   a:hover,
   a:active {
     color: #fff;
+  }
+}
+
+@media large {
+  .reverse {
+    background: #e44690 url(./bg.png) right no-repeat;
+    color: #fff;
+
+    .reverse {
+      background: transparent;
+    }
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    label {
+      display: none;
+    }
+
+    >a span {
+      flex: 1;
+    }
+
+    nav {
+      display: flex;
+
+      div {
+  height: auto !important;
+      }
+
+      a {
+        flex: 1;
+        padding-right: 2rem;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+nav {
+  label {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  div {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.4s;
+  }
+
+  #menuToggle span {
+    cursor: pointer;
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #toggle:checked {
+    ~div {
+      height: 230px;
+    }
+
+    ~#menuToggle span {
+      opacity: 1;
+      transform: rotate(45deg) translate(0px, -20px);
+      background: $colour-brand-5;
+
+      &:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, 20px);
+      }
+
+      &:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+    }
   }
 }

@@ -5,6 +5,7 @@ import Box from 'components/box';
 import Title from 'components/title';
 import { graphql } from 'gatsby';
 
+
 const Index = ({ data }) => (
   <Layout addClass="reverse">
     <Box>
