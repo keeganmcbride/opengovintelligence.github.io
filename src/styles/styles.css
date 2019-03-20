@@ -206,6 +206,10 @@ footer {
   background: #e44690;
   color: #fff;
 
+  .Box {
+background: #e44690;
+  }
+
   h2 {
     color: #fff;
   }
