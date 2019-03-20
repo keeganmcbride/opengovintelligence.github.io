@@ -223,14 +223,11 @@ footer {
   }
 
   li {
-    margin: 0;
+    margin: 0 0 0.5rem;
   }
 }
 
 @media large {
-  div.reverse {
-    background: #e44690 url(./bg.png) right no-repeat;
-  }
 
   .Gallery {
     grid-template-columns: repeat(4, 1fr);
@@ -255,6 +252,10 @@ footer {
     .reverse {
       background: transparent;
     }
+  }
+
+  div.reverse {
+    background: #e44690 url(./bg.png) right no-repeat;
   }
 
   header {
