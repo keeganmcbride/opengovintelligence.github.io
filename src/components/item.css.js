@@ -9,7 +9,7 @@ export const Title = styled.span`
 
 export const Copy = styled.p`
   color: #757575;
-  margin: 0 0 2rem;
+  margin: 0;
 
   ${MEDIA.TABLET`
     margin-bottom: 4rem;
