@@ -3,35 +3,35 @@
   "content": "content.md",
   "gallery": [{
       "title": "Trafford",
-      "copy": "",
+      "copy": "Insight to help people into work",
       "link": "https://medium.com/opengovintelligence/reducing-work-ness-with-linked-data-498774e4e8cd",
       "image": "../images/pilots/trafford.png"
     },
     {
       "title": "Flemish government",
-      "copy": "",
+      "copy": "Exploring pollution in the environment through company emission reports",
       "link": "https://medium.com/opengovintelligence/ogi-at-the-department-of-environment-and-spatial-planning-of-the-flemish-government-5b82990d457d",
       "image": "../images/pilots/lne.png"
     },
     {
       "title": "Greek government",
-      "copy": "",
+      "copy": "Improving the monitoring and management of government vehicles.",
       "link": "https://medium.com/opengovintelligence/using-linked-open-statistical-data-to-enhance-executive-decision-making-in-greek-public-47c3fb316f3a",
       "image": "../images/pilots/greek.png"
     },
     {
       "title": "Irish Marine Institute",
-      "copy": "",
+      "copy": "Understanding the marine environment for renewable energy production",
       "link": "https://medium.com/opengovintelligence/making-environmental-data-flows-into-linked-open-statistical-data-dc054d6b2d74",
       "image": "../images/pilots/marine.png"
     }, {
       "title": "Estonian Government",
-      "copy": "",
+      "copy": "Co-creating a real estate portal from open government data.",
       "link": "https://medium.com/opengovintelligence/co-creating-a-real-estate-portal-from-open-government-data-fccb85c9d910",
       "image": "../images/pilots/estonia.png"
     }, {
       "title": "Lithuanian Government",
-      "copy": "",
+      "copy": "Market research data for business planning",
       "link": "https://medium.com/opengovintelligence/the-lithuanian-pilot-a-market-research-solution-3330346a7131",
       "image": "../images/pilots/lith.png"
     }
