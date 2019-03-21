@@ -76,5 +76,10 @@
     "mkdirp": "^0.5.1",
     "node-gyp": "^3.8.0",
     "prettier": "^1.16.0"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "IE 11"
+  ]
 }

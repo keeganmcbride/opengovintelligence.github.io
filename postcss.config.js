@@ -10,7 +10,8 @@ module.exports = {
     'postcss-calc': {
       selectors: true
     },
-    'autoprefixer': {},
+    'autoprefixer': {
+    },
     'postcss-discard-comments': {},
     'css-mqpacker':{},
     'postcss-combine-duplicated-selectors':{},
