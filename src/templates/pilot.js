@@ -9,14 +9,15 @@ import Pilotsnav from 'components/Pilotsnav';
 const Pilot = ({ data }) => (
   <Layout>
     <Head pageTitle={data.markdownRemark.frontmatter.title} />
-    <Pilotsnav />
     <Box>
       <h1>{data.markdownRemark.frontmatter.title}</h1>
+      <h2>{data.markdownRemark.frontmatter.blurb}</h2>
       <div
         dangerouslySetInnerHTML={{
           __html: data.markdownRemark.html,
         }}
       />
+      <Pilotsnav />
     </Box>
   </Layout>
 );
@@ -31,6 +32,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        blurb
       }
     }
   }
