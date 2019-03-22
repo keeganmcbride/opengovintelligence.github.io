@@ -39,12 +39,8 @@ const Footer = () => (
                 <use xlinkHref="#a" transform="scale(-1,1)" />
               </g>
             </defs>
-            <rect
-              fill="#039"
-              width="810"
-              height="540"
-            />
-          <g fill="#fc0" transform="scale(30)translate(13.5,9)">
+            <rect fill="#039" width="810" height="540" />
+            <g fill="#fc0" transform="scale(30)translate(13.5,9)">
               <use xlinkHref="#s" y="-6" />
               <use xlinkHref="#s" y="6" />
               <g id="l">

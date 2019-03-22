@@ -1,4 +1,5 @@
 {
   "title": "Home",
-  "content": "intro.md"
+  "content": "intro.md",
+  "body": "body.md"
 }
