@@ -19,6 +19,8 @@ const Nav = () => (
 
       <Link to="/software">Software</Link>
 
+      <Link to="/training">Training</Link>
+
       <Link to="/deliverables">Deliverables</Link>
 
       <a href="https://medium.com/opengovintelligence">Blog</a>
